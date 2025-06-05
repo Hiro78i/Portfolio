@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lander Villagracia - Frontend Developer Portfolio</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Lander Villagracia - Frontend Developer and Web Developer specializing in creating intuitive and visually stunning digital experiences. View my portfolio of web development projects." />
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="Lander Villagracia, Frontend Developer, Web Developer, UI/UX Design, Portfolio, Web Development, Philippines" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-portfolio-url.com/" />
+    <meta property="og:title" content="Lander Villagracia - Frontend Developer Portfolio" />
+    <meta property="og:description" content="Frontend Developer and Web Developer specializing in creating intuitive and visually stunning digital experiences." />
+    <meta property="og:image" content="https://your-portfolio-url.com/images/pfp.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-portfolio-url.com/" />
+    <meta property="twitter:title" content="Lander Villagracia - Frontend Developer Portfolio" />
+    <meta property="twitter:description" content="Frontend Developer and Web Developer specializing in creating intuitive and visually stunning digital experiences." />
+    <meta property="twitter:image" content="https://your-portfolio-url.com/images/pfp.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lander Villagracia",
+        "url": "https://your-portfolio-url.com",
+        "image": "https://your-portfolio-url.com/images/pfp.jpg",
+        "sameAs": [
+            "https://www.facebook.com/yourprofile",
+            "https://twitter.com/yourprofile",
+            "https://www.instagram.com/yourprofile",
+            "https://www.linkedin.com/in/yourprofile",
+            "https://github.com/yourprofile"
+        ],
+        "jobTitle": "Frontend Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Camarines Norte State College"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header role="banner">
+        <div class="container header-container">
+            <div class="logo" role="text">Lander Villagracia</div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#blog">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main role="main">
+        <section id="home" class="home-section" aria-label="Introduction">
+            <div class="container home-container">
+                <div class="profile-pic">
+                    <img src="../images/pfp.jpg" alt="Lander Villagracia - Frontend Developer" width="180" height="180" />
+                </div>
+                <div class="intro-text">
+                    <h1>Hi, I'm <span class="highlight">Lander Villagracia</span></h1>
+                    <h2>Frontend Developer/Web Developer</h2>
+                    <p>
+                        A passionate Information Technology graduate specializing in creating intuitive and visually stunning digital experiences. 
+                        With expertise in frontend development, UI/UX design, and web development, I transform ideas into functional and 
+                        aesthetically pleasing solutions. Let's collaborate to bring your digital vision to life!
+                    </p>
+                    <div class="buttons">
+                        <a href="../images/Resume.pdf" class="btn btn-primary" download aria-label="Download my resume">Download CV</a>
+                        <a href="#contact" class="btn btn-secondary" aria-label="Go to contact section">Contact</a>
+                    </div>
+                    <div class="social-icons" role="navigation" aria-label="Social media links">
+                        <a href="https://www.facebook.com/lander.villagracia.19/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Facebook profile">
+                            <img src="../images/social/facebook.png" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">
+                            <img src="../images/social/twitter.png" alt="Twitter" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/izlanders_?igsh=bnhwNGEzNGo0d2Fk" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram profile">
+                            <img src="../images/social/instagram.png" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="https://www.linkedin.com/in/lander-villagracia-a67301206/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <img src="../images/social/linkedin.png" alt="LinkedIn" width="24" height="24">
+                        </a>
+                        <a href="https://github.com/Hiro78i" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <img src="../images/social/github.png" alt="GitHub" width="24" height="24">
+                        </a>
+                        <a href="mailto:villagracialander@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send me an email">
+                            <img src="../images/social/gmail.svg" alt="Gmail" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title">About Me</h2>
+                <p>Hi, I'm Lander Villagracia, an Information Technology graduate with a passion for creating intuitive and visually stunning digital experiences. As a CSS NCII passer and holder of Google AI certifications, I continuously expand my expertise to stay ahead in the ever-evolving tech landscape.</p>
+                <p>With experience as a freelancer, I specialize in frontend development, web development, and UI/UX design using Figma to craft seamless interfaces. My skills extend to video editing on CapCut, WordPress customization, and building engaging websites tailored to diverse needs.</p>
+                <p>Driven by innovation and a keen eye for detail, I thrive on transforming ideas into functional, aesthetically pleasing solutions. Whether it's designing user-friendly websites, fine-tuning visuals, or developing interactive platforms, I bring creativity and technical proficiency to every project.</p>
+                <p>Let's build something amazing together!</p>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <div class="container">
+                <h2>Tools and Skills</h2>
+                <div class="tools-icons">
+                    <a href="https://www.canva.com" target="_blank" aria-label="Canva">
+                        <img src="../images/tech/canva.svg" alt="Canva" />
+                    </a>
+                    <a href="https://code.visualstudio.com" target="_blank" aria-label="VSCode">
+                        <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="VSCode" />
+                    </a>
+                    <a href="https://www.capcut.com" target="_blank" aria-label="CapCut">
+                        <img src="../images/tech/capcut.svg" alt="CapCut" />
+                    </a>
+                    <a href="https://www.figma.com" target="_blank" aria-label="Figma">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
+                    </a>
+                    <!-- New Technology Logos -->
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" aria-label="JavaScript">
+                        <img src="../images/tech/javascript.svg" alt="JavaScript" />
+                    </a>
+                    <a href="https://reactjs.org/" target="_blank" aria-label="React.js">
+                        <img src="../images/tech/react.svg" alt="React.js" />
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" aria-label="HTML5">
+                        <img src="../images/tech/html5.svg" alt="HTML5" />
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" aria-label="CSS3">
+                        <img src="../images/tech/css3.svg" alt="CSS3" />
+                    </a>
+                     <a href="https://www.mongodb.com/" target="_blank" aria-label="MongoDB">
+                        <img src="../images/tech/mongodb.svg" alt="MongoDB" />
+                    </a>
+                     <a href="https://firebase.google.com/" target="_blank" aria-label="Firebase">
+                        <img src="../images/tech/firebase.svg" alt="Firebase" />
+                    </a>
+                     <a href="https://nodejs.org/" target="_blank" aria-label="Node.js">
+                        <img src="../images/tech/nodejs.svg" alt="Node.js" />
+                    </a>
+                    <a href="https://wordpress.org/" target="_blank" aria-label="WordPress">
+                        <img src="../images/tech/wordpress.svg" alt="WordPress" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2 class="fade-in">Resume</h2>
+                <div class="resume-grid">
+                    <div class="resume-left">
+                        <div class="skills-card animate-card">
+                            <h3>Skills</h3>
+                            <div class="skills-section">
+                                <h4>Hard Skills</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item"><span class="star">★</span> UI/UX Design & Development</div>
+                                    <div class="skill-item"><span class="star">★</span> Frontend & Backend Development</div>
+                                    <div class="skill-item"><span class="star">★</span> Advertising & Marketing Design</div>
+                                    <div class="skill-item"><span class="star">★</span> Multimedia Production</div>
+                                    <div class="skill-item"><span class="star">★</span> Microsoft Suite</div>
+                                    <div class="skill-item"><span class="star">★</span> Graphic Design</div>
+                                </div>
+                            </div>
+                            <div class="skills-section">
+                                <h4>Soft Skills</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item"><span class="star">★</span> Problem Solving</div>
+                                    <div class="skill-item"><span class="star">★</span> Creativity</div>
+                                    <div class="skill-item"><span class="star">★</span> Communication</div>
+                                    <div class="skill-item"><span class="star">★</span> Teamwork</div>
+                                    <div class="skill-item"><span class="star">★</span> Adaptability</div>
+                                    <div class="skill-item"><span class="star">★</span> Time Management</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-right">
+                        <div class="skills-card animate-card">
+                            <h3>Education</h3>
+                            <div class="skills-section">
+                                <div class="education-list">
+                                    <div class="education-item">
+                                        <b>Bachelor of Science in Information Technology</b><br />
+                                        Camarines Norte State College<br />
+                                        2025 - Present
+                                    </div>
+                                    <div class="education-item">
+                                        <b>Humanities and Social Sciences</b><br />
+                                        Vinzons Pilot High School<br />
+                                        2019 - 2021
+                                    </div>
+                                    <div class="education-item">
+                                        <b>Junior High School</b><br />
+                                        Froilan Lopez High School<br />
+                                        2015 - 2019
+                                    </div>
+                                    <div class="education-item">
+                                        <b>Primary</b><br />
+                                        UP Teachers Village Elementary School<br />
+                                        2008 - 2015
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card animate-card">
+                        <h3><i class="fas fa-ticket-alt"></i> Smart Ticketing Website</h3>
+                        <div class="project-description">
+                            <p>A comprehensive ticketing system that streamlines event management and ticket sales. Features include real-time seat selection, secure payment processing, and automated email confirmations.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                        <!-- Tech Icons for Smart Ticketing -->
+                        <div class="project-tech-icons">
+                            <img src="../images/tech/html5.svg" alt="HTML5" title="HTML5">
+                            <img src="../images/tech/css3.svg" alt="CSS3" title="CSS3">
+                            <img src="../images/tech/javascript.svg" alt="JavaScript" title="JavaScript">
+                            <!-- Add icons for PHP and MySQL if downloaded later -->
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/drive/folders/19yFjxNDoQnJ5h2vHItnE0-PNl-LwR8C5?usp=drive_link" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card animate-card">
+                        <h3><i class="fas fa-masks-theater"></i> E-Bida CamNorte Website</h3>
+                        <div class="project-description">
+                            <p>A vibrant platform showcasing local festivals and events in Camarines Norte. Features include event calendars, photo galleries, and interactive maps for tourist attractions.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Google Maps API</span>
+                            </div>
+                        </div>
+                        <!-- Tech Icons for E-Bida -->
+                        <div class="project-tech-icons">
+                            <img src="../images/tech/react.svg" alt="React.js" title="React.js">
+                            <img src="../images/tech/nodejs.svg" alt="Node.js" title="Node.js">
+                            <img src="../images/tech/mongodb.svg" alt="MongoDB" title="MongoDB">
+                            <!-- Add icons for Express and Google Maps API if downloaded later -->
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/drive/folders/11MYi9SI485Xy9bTOFxEdyiaNMY_sGRGa?usp=sharing" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card animate-card">
+                        <h3><i class="fas fa-fish"></i> Fish Monitoring Website</h3>
+                        <div class="project-description">
+                            <p>An innovative system for monitoring fish farm conditions and health metrics. Features real-time data visualization, automated alerts, and comprehensive reporting tools.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Javascript</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Tailwind</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                        <!-- Tech Icons for Fish Monitoring -->
+                        <div class="project-tech-icons">
+                            <div class="project-tags">
+                              <span>PHP</span>
+                              <span>JavaScript</span>
+                              <span>Firebase</span>
+                              <span>Tailwind</span>
+                              <span>CSS3</span>
+                            </div>
+                            <div class="icon-group">
+                                <img src="../images/tech/php.svg" alt="PHP" title="PHP">
+                                <img src="../images/tech/javascript.svg" alt="JavaScript" title="JavaScript">
+                                <img src="../images/tech/firebase.svg" alt="Firebase" title="Firebase">
+                                <img src="../images/tech/tailwind.svg" alt="Tailwind" title="Tailwind">
+                                <img src="../images/tech/css3.svg" alt="CSS3" title="CSS3">
+                            </div>
+                             <div class="icon-group">
+                                <img src="../images/tech/php.svg" alt="PHP" title="PHP">
+                                <img src="../images/tech/javascript.svg" alt="JavaScript" title="JavaScript">
+                                <img src="../images/tech/firebase.svg" alt="Firebase" title="Firebase">
+                                <img src="../images/tech/tailwind.svg" alt="Tailwind" title="Tailwind">
+                                <img src="../images/tech/css3.svg" alt="CSS3" title="CSS3">
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/drive/folders/1reKsowpBeAQkishPe0EGwEnv0GdDj0i1?usp=sharing" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title">Contact</h2>
+                <form id="contact-form" action="https://formspree.io/f/mdkzkbqn" method="POST" aria-label="Contact form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true" />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true" />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+                    <button type="submit" class="btn btn-primary" aria-label="Send message">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container footer-container">
+            <p>&copy; 2024 Lander Villagracia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optimized Font Awesome loading -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    
+    <!-- Form validation and security -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                e.preventDefault(); // Prevent actual submission
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                e.preventDefault(); // Prevent actual submission
+                return;
+            }
+            
+            // If validation passes, the form will submit normally to Formspree
+            // No need for an explicit success message here, Formspree handles it.
+
+            // You might want to add a loading state to the button here if desired
+
+            // Add CSRF token if you're using a backend (Formspree handles this differently)
+            // const formData = new FormData(this);
+        });
+    </script>
+    
+    <!-- Main script -->
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+<!-- Project Details Modal -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="projectImageGallery" class="project-image-gallery">
+            <!-- Project images will be loaded here by JavaScript -->
+        </div>
+    </div>
+</div>
+
+<!-- Full Image Modal -->
+<div id="fullImageModal" class="modal">
+    <div class="modal-content full-image-content">
+        <span class="close-button full-image-close">&times;</span>
+        <img id="fullImage" src="" alt="Full size project image">
+    </div>
+</div>
