@@ -126,19 +126,19 @@ function debounce(func, wait) {
 // Apply debounce to scroll event
 window.addEventListener('scroll', debounce(animateOnScroll, 10));
 
-// Contact form submission handler
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Simple form validation could be added here
-
-    alert('Thank you for your message! I will get back to you soon.');
-
-    // Reset form
-    contactForm.reset();
-});
+// Contact form submission handler - REPLACED BY EMAILJS LOGIC BELOW
+// const contactForm = document.getElementById('contact-form');
+//
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//
+//     // Simple form validation could be added here
+//
+//     alert('Thank you for your message! I will get back to you soon.');
+//
+//     // Reset form
+//     contactForm.reset();
+// });
 
 // Add JavaScript here
 
@@ -197,52 +197,143 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = projectModal.querySelector('.close-button');
     const projectCards = document.querySelectorAll('.project-card');
 
-    // Define project images (replace with your actual image paths)
+    // Define project images
     const projectImages = {
         'Smart Ticketing Website': [
-            '../images/1-B.jpg',
-            '../images/1-C.jpg',
-            '../images/1-D.jpg',
-            '../images/1-E.jpg',
-            '../images/1-F.jpg',
-            '../images/1-G.jpg'
+            'images/Project1/1-B.jpg',
+            'images/Project1/1-C.jpg',
+            'images/Project1/1-D.jpg',
+            'images/Project1/1-E.jpg',
+            'images/Project1/1-F.jpg',
+            'images/Project1/1-G.jpg',
+            'images/Project1/1-I.jpg'
+        ],
+        'Resource Allocation and Tracking Engine': [
+            'images/Project2/Screenshot (179).png',
+            'images/Project2/Screenshot (180).png',
+            'images/Project2/Screenshot (181).png',
+            'images/Project2/Screenshot (182).png',
+            'images/Project2/Screenshot (183).png',
+            'images/Project2/Screenshot (184).png',
+            'images/Project2/Screenshot (185).png',
+            'images/Project2/Screenshot (186).png',
+            'images/Project2/Screenshot (187).png',
+            'images/Project2/Screenshot (188).png',
+            'images/Project2/Screenshot (189).png',
+            'images/Project2/Screenshot (190).png',
+            'images/Project2/Screenshot (191).png',
+            'images/Project2/Screenshot (192).png',
+            'images/Project2/Screenshot (193).png',
+            'images/Project2/Screenshot (194).png',
+            'images/Project2/Screenshot (195).png',
+            'images/Project2/Screenshot (196).png'
         ],
         'E-Bida CamNorte Website': [
-            'https://placehold.co/800x600/43a047/fff?text=E-Bida+1',
-            'https://placehold.co/800x600/388e3c/fff?text=E-Bida+2',
-            'https://placehold.co/800x600/1b5e20/fff?text=E-Bida+3'
+            'images/Project4/Screenshot (147).png',
+            'images/Project4/Screenshot (148).png',
+            'images/Project4/Screenshot (149).png',
+            'images/Project4/Screenshot (150).png'
         ],
-        'Aquarium Monitoring Website': [
-            'https://placehold.co/800x600/00bcd4/fff?text=Aquarium+1',
-            'https://placehold.co/800x600/0097a7/fff?text=Aquarium+2',
-            'https://placehold.co/800x600/006064/fff?text=Aquarium+3'
+        'Fish Monitoring Website': [
+            'images/Project3/Screenshot (143).png',
+            'images/Project3/Screenshot (144).png',
+            'images/Project3/Screenshot (145).png',
+            'images/Project3/Screenshot (146).png'
         ]
     };
 
-    projectCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const projectTitle = card.querySelector('h3').textContent;
-            const images = projectImages[projectTitle];
+    document.querySelectorAll('.view-project-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent bubbling if card has listener
+            const projectName = btn.getAttribute('data-project');
+            const images = projectImages[projectName];
 
             if (images && images.length > 0) {
-                // Clear previous images
+                // Clear previous content
                 projectImageGallery.innerHTML = '';
 
-                // Add images to the gallery
-                images.forEach(imageUrl => {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = imageUrl;
-                    imgElement.alt = projectTitle + ' Screenshot'; // Add alt text for accessibility
-                    projectImageGallery.appendChild(imgElement);
+                // Create Carousel Structure
+                const carouselContainer = document.createElement('div');
+                carouselContainer.className = 'carousel';
+                
+                const track = document.createElement('div');
+                track.className = 'carousel-track';
+                
+                images.forEach((src, index) => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.className = 'carousel-img';
+                    img.alt = `${projectName} Image ${index + 1}`;
+                    track.appendChild(img);
                 });
 
-                // Show the modal
+                carouselContainer.appendChild(track);
+
+                // Add Navigation Buttons
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'carousel-btn prev';
+                prevBtn.innerHTML = '&#10094;';
+                
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'carousel-btn next';
+                nextBtn.innerHTML = '&#10095;';
+                
+                carouselContainer.appendChild(prevBtn);
+                carouselContainer.appendChild(nextBtn);
+
+                // Add Indicators
+                const indicatorsContainer = document.createElement('div');
+                indicatorsContainer.className = 'carousel-indicators';
+                images.forEach((_, index) => {
+                    const indicator = document.createElement('div');
+                    indicator.className = `indicator ${index === 0 ? 'active' : ''}`;
+                    indicator.addEventListener('click', () => goToSlide(index));
+                    indicatorsContainer.appendChild(indicator);
+                });
+                carouselContainer.appendChild(indicatorsContainer);
+
+                projectImageGallery.appendChild(carouselContainer);
                 projectModal.classList.add('show');
+
+                // Carousel Logic
+                let currentIndex = 0;
+                
+                function updateCarousel() {
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    // Update indicators
+                    const indicators = indicatorsContainer.querySelectorAll('.indicator');
+                    indicators.forEach((ind, idx) => {
+                        ind.classList.toggle('active', idx === currentIndex);
+                    });
+                }
+
+                function goToSlide(index) {
+                    currentIndex = index;
+                    updateCarousel();
+                }
+
+                prevBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateCarousel();
+                });
+
+                nextBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    currentIndex = (currentIndex + 1) % images.length;
+                    updateCarousel();
+                });
+
             } else {
-                console.warn('No images found for project:', projectTitle);
+                console.warn('No images found for project:', projectName);
             }
         });
     });
+
+    // Remove the old card click listener if possible, or just ensure the button handles it.
+    // The previous implementation added listeners to projectCards. We should remove that block or ensure it doesn't conflict.
+    // Since I'm replacing the block that added listeners to projectCards, it's fine.
+
 
     // Close the project modal when the close button is clicked
     closeButton.addEventListener('click', () => {
@@ -370,3 +461,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// Contact Form Logic (EmailJS)
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Show loading state
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = 'Sending...';
+        submitBtn.disabled = true;
+
+        // Generate a random number for the contact number variable
+        // This assumes your EmailJS template uses {{contact_number}}
+        if (!contactForm.contact_number) {
+             const hiddenInput = document.createElement('input');
+             hiddenInput.type = 'hidden';
+             hiddenInput.name = 'contact_number';
+             contactForm.appendChild(hiddenInput);
+        }
+        contactForm.contact_number.value = Math.random() * 100000 | 0;
+
+        // These IDs from the previous step are placeholders.
+        // You MUST update them with your actual Service ID and Template ID.
+        emailjs.sendForm('service_0qt2ash', 'template_33f829a', this)
+            .then(function() {
+                // Success!
+                Swal.fire({
+                    title: 'Message Sent!',
+                    text: 'Thank you for reaching out. I will get back to you soon.',
+                    icon: 'success',
+                    confirmButtonColor: '#2196f3',
+                    background: '#1f1f1f',
+                    color: '#e0e0e0'
+                });
+                contactForm.reset();
+            }, function(error) {
+                // Failed...
+                console.error('EmailJS Error:', error);
+                Swal.fire({
+                    title: 'Oops...',
+                    text: 'Something went wrong: ' + JSON.stringify(error),
+                    icon: 'error',
+                    confirmButtonColor: '#2196f3',
+                    background: '#1f1f1f',
+                    color: '#e0e0e0'
+                });
+            })
+            .finally(function() {
+                // Reset button state
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            });
+    });
+}

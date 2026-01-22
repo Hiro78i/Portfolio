@@ -566,9 +566,9 @@ footer {
 }
 
 .project-card {
-    background: #ffffff;
+    background: #1f1f1f;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin-bottom: 30px;
     transition: transform 0.3s ease;
@@ -579,7 +579,7 @@ footer {
 }
 
 .project-card h3 {
-    color: #333;
+    color: #e0e0e0;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -596,9 +596,10 @@ footer {
 }
 
 .project-description p {
-    color: #666;
+    color: #d0d0d0;
     line-height: 1.6;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .tech-stack {
@@ -609,8 +610,8 @@ footer {
 }
 
 .tech-tag {
-    background: #e3f2fd;
-    color: #1976d2;
+    background: rgba(33, 150, 243, 0.2);
+    color: #90caf9;
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.9em;
@@ -1156,5 +1157,116 @@ form textarea:focus {
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+/* Client Reviews Section */
+.reviews-section {
+    padding: 60px 0;
+    background-color: #121212;
+    overflow: hidden;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.reviews-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* Create a mask for fading edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.review-track {
+    display: flex;
+    width: max-content;
+    gap: 30px;
+    /* Animation will be handled by JS for seamless looping or purely CSS if I duplicate content manually */
+    /* Using CSS animation with JS cloning is best */
+    animation: scroll 40s linear infinite;
+    padding: 20px 0;
+}
+
+.review-track:hover {
+    animation-play-state: paused;
+}
+
+.review-card {
+    background: #1f1f1f;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    border-color: #2196f3;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.quote-icon {
+    color: #2196f3;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review-content p {
+    color: #d0d0d0;
+    font-style: italic;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.client-info {
+    margin-top: auto; /* Push to bottom */
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.client-info h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.client-info span {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move half way assuming content is doubled */
+    }
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 300px;
+        padding: 20px;
+    }
+    
+    .review-track {
+        gap: 20px;
     }
 }

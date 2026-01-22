@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lander Villagracia - Frontend Developer Portfolio</title>
+    <title>Lander Villagracia - IT - Web Developer Portfolio</title>
     
     <!-- Meta Description -->
-    <meta name="description" content="Lander Villagracia - Frontend Developer and Web Developer specializing in creating intuitive and visually stunning digital experiences. View my portfolio of web development projects." />
+    <meta name="description" content="Lander Villagracia - IT - Web Developer specializing in creating intuitive and visually stunning digital experiences. View my portfolio of web development projects." />
     
     <!-- Keywords -->
-    <meta name="keywords" content="Lander Villagracia, Frontend Developer, Web Developer, UI/UX Design, Portfolio, Web Development, Philippines" />
+    <meta name="keywords" content="Lander Villagracia, IT - Web Developer, UI/UX Design, Portfolio, Web Development, Philippines" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://your-portfolio-url.com/" />
-    <meta property="og:title" content="Lander Villagracia - Frontend Developer Portfolio" />
-    <meta property="og:description" content="Frontend Developer and Web Developer specializing in creating intuitive and visually stunning digital experiences." />
+    <meta property="og:title" content="Lander Villagracia - IT - Web Developer Portfolio" />
+    <meta property="og:description" content="IT - Web Developer specializing in creating intuitive and visually stunning digital experiences." />
     <meta property="og:image" content="https://your-portfolio-url.com/images/pfp.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://your-portfolio-url.com/" />
-    <meta property="twitter:title" content="Lander Villagracia - Frontend Developer Portfolio" />
-    <meta property="twitter:description" content="Frontend Developer and Web Developer specializing in creating intuitive and visually stunning digital experiences." />
+    <meta property="twitter:title" content="Lander Villagracia - IT - Web Developer Portfolio" />
+    <meta property="twitter:description" content="IT - Web Developer specializing in creating intuitive and visually stunning digital experiences." />
     <meta property="twitter:image" content="https://your-portfolio-url.com/images/pfp.jpg" />
     
     <!-- Favicon -->
@@ -31,6 +31,17 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
+    
+    <!-- SweetAlert2 for nice alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Q6g8LWfVVR_91ccIH');
+        })();
+    </script>
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -47,7 +58,7 @@
             "https://www.linkedin.com/in/yourprofile",
             "https://github.com/yourprofile"
         ],
-        "jobTitle": "Frontend Developer",
+        "jobTitle": "IT - Web Developer",
         "worksFor": {
             "@type": "Organization",
             "name": "Freelance"
@@ -84,15 +95,15 @@
         <section id="home" class="home-section" aria-label="Introduction">
             <div class="container home-container">
                 <div class="profile-pic">
-                    <img src="../images/pfp.jpg" alt="Lander Villagracia - Frontend Developer" width="180" height="180" />
+                    <img src="../images/pfp.jpg" alt="Lander Villagracia - IT - Web Developer" width="180" height="180" />
                 </div>
                 <div class="intro-text">
                     <h1>Hi, I'm <span class="highlight">Lander Villagracia</span></h1>
-                    <h2>Frontend Developer/Web Developer</h2>
+                    <h2>IT - Web Developer</h2>
                     <p>
-                        A passionate Information Technology graduate specializing in creating intuitive and visually stunning digital experiences. 
-                        With expertise in frontend development, UI/UX design, and web development, I transform ideas into functional and 
-                        aesthetically pleasing solutions. Let's collaborate to bring your digital vision to life!
+                        I am an Information Technology graduate and IT professional currently working at the School Division Office of Camarines Norte (SDO) . 
+                        I specialize in web development, frontend engineering, and UI/UX design , creating modern, intuitive, and reliable digital solutions 
+                        for both government and private sector needs.
                     </p>
                     <div class="buttons">
                         <a href="../images/Resume.pdf" class="btn btn-primary" download aria-label="Download my resume">Download CV</a>
@@ -100,19 +111,19 @@
                     </div>
                     <div class="social-icons" role="navigation" aria-label="Social media links">
                         <a href="https://www.facebook.com/lander.villagracia.19/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Facebook profile">
-                            <img src="../images/social/facebook.png" alt="Facebook" width="24" height="24">
+                            <img src="../images/social/facebook.svg" alt="Facebook" width="24" height="24">
                         </a>
                         <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">
-                            <img src="../images/social/twitter.png" alt="Twitter" width="24" height="24">
+                            <img src="../images/social/twitter.svg" alt="Twitter" width="24" height="24">
                         </a>
                         <a href="https://www.instagram.com/izlanders_?igsh=bnhwNGEzNGo0d2Fk" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram profile">
-                            <img src="../images/social/instagram.png" alt="Instagram" width="24" height="24">
+                            <img src="../images/social/instagram.svg" alt="Instagram" width="24" height="24">
                         </a>
                         <a href="https://www.linkedin.com/in/lander-villagracia-a67301206/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
-                            <img src="../images/social/linkedin.png" alt="LinkedIn" width="24" height="24">
+                            <img src="../images/social/linkedin.svg" alt="LinkedIn" width="24" height="24">
                         </a>
                         <a href="https://github.com/Hiro78i" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
-                            <img src="../images/social/github.png" alt="GitHub" width="24" height="24">
+                            <img src="../images/social/github.svg" alt="GitHub" width="24" height="24">
                         </a>
                         <a href="mailto:villagracialander@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send me an email">
                             <img src="../images/social/gmail.svg" alt="Gmail" width="24" height="24">
@@ -125,10 +136,9 @@
         <section id="about" class="about-section" aria-labelledby="about-title">
             <div class="container">
                 <h2 id="about-title">About Me</h2>
-                <p>Hi, I'm Lander Villagracia, an Information Technology graduate with a passion for creating intuitive and visually stunning digital experiences. As a CSS NCII passer and holder of Google AI certifications, I continuously expand my expertise to stay ahead in the ever-evolving tech landscape.</p>
-                <p>With experience as a freelancer, I specialize in frontend development, web development, and UI/UX design using Figma to craft seamless interfaces. My skills extend to video editing on CapCut, WordPress customization, and building engaging websites tailored to diverse needs.</p>
-                <p>Driven by innovation and a keen eye for detail, I thrive on transforming ideas into functional, aesthetically pleasing solutions. Whether it's designing user-friendly websites, fine-tuning visuals, or developing interactive platforms, I bring creativity and technical proficiency to every project.</p>
-                <p>Let's build something amazing together!</p>
+            <p>Web Developer and IT Professional at the School Division Office of Camarines Norte (SDO) with experience building and maintaining web-based systems for organizational use.</p>
+            <p>I specialize in full-stack web development using the PERN stack (PostgreSQL, Express.js, React, Node.js) and Supabase for database management, authentication, and backend services. My work includes API integration, CRUD systems, role-based access control, and performance optimization.</p>
+            <p>Certified CSS NC II passer and Google AI Certifications holder, committed to continuous learning and delivering efficient, scalable digital solutions.</p>
             </div>
         </section>
 
@@ -136,14 +146,17 @@
             <div class="container">
                 <h2>Tools and Skills</h2>
                 <div class="tools-icons">
-                    <a href="https://www.canva.com" target="_blank" aria-label="Canva">
-                        <img src="../images/tech/canva.svg" alt="Canva" />
-                    </a>
                     <a href="https://code.visualstudio.com" target="_blank" aria-label="VSCode">
                         <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="VSCode" />
                     </a>
-                    <a href="https://www.capcut.com" target="_blank" aria-label="CapCut">
-                        <img src="../images/tech/capcut.svg" alt="CapCut" />
+                    <a href="https://supabase.com/" target="_blank" aria-label="Supabase">
+                        <img src="../images/tech/supabase.svg" alt="Supabase" />
+                    </a>
+                    <a href="https://www.postgresql.org/" target="_blank" aria-label="PostgreSQL">
+                        <img src="../images/tech/postgresql.svg" alt="PostgreSQL" />
+                    </a>
+                    <a href="https://www.apachefriends.org/" target="_blank" aria-label="XAMPP">
+                        <img src="../images/tech/xampp.svg" alt="XAMPP" />
                     </a>
                     <a href="https://www.figma.com" target="_blank" aria-label="Figma">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
@@ -187,12 +200,14 @@
                             <div class="skills-section">
                                 <h4>Hard Skills</h4>
                                 <div class="skills-grid">
-                                    <div class="skill-item"><span class="star">★</span> UI/UX Design & Development</div>
-                                    <div class="skill-item"><span class="star">★</span> Frontend & Backend Development</div>
+                                    <div class="skill-item"><span class="star">★</span> Programming</div>
+                                    <div class="skill-item"><span class="star">★</span> UI/UX–Driven Web Development</div>
+                                    <div class="skill-item"><span class="star">★</span> Full-Stack Development (PostgreSQL · Express · React · Node.js)</div>
+                                    <div class="skill-item"><span class="star">★</span> REST API & Supabase Integration</div>
+                                    <div class="skill-item"><span class="star">★</span> Responsive & Scalable Web Applications</div>
                                     <div class="skill-item"><span class="star">★</span> Advertising & Marketing Design</div>
                                     <div class="skill-item"><span class="star">★</span> Multimedia Production</div>
                                     <div class="skill-item"><span class="star">★</span> Microsoft Suite</div>
-                                    <div class="skill-item"><span class="star">★</span> Graphic Design</div>
                                 </div>
                             </div>
                             <div class="skills-section">
@@ -216,7 +231,7 @@
                                     <div class="education-item">
                                         <b>Bachelor of Science in Information Technology</b><br />
                                         Camarines Norte State College<br />
-                                        2025 - Present
+                                        2021 - 2025
                                     </div>
                                     <div class="education-item">
                                         <b>Humanities and Social Sciences</b><br />
@@ -266,7 +281,32 @@
                             <!-- Add icons for PHP and MySQL if downloaded later -->
                         </div>
                         <div class="project-links">
-                            <a href="https://drive.google.com/drive/folders/19yFjxNDoQnJ5h2vHItnE0-PNl-LwR8C5?usp=drive_link" class="btn btn-primary" target="_blank">View Project</a>
+                            <button class="btn btn-primary view-project-btn" data-project="Smart Ticketing Website">View Project</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Resource Allocation and Tracking Engine -->
+                    <div class="project-card animate-card">
+                        <h3><i class="fas fa-tasks"></i> Resource Allocation and Tracking Engine</h3>
+                        <div class="project-description">
+                            <p>A web-based application designed to efficiently manage, allocate, and monitor organizational resources in real time. It streamlines resource assignment, tracks usage and availability, and provides centralized data for better planning, accountability, and decision making.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Supabase</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-icons">
+                            <img src="../images/tech/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+                            <!-- Express.js icon often not standard, skipping or using nodejs -->
+                            <img src="../images/tech/react.svg" alt="React" title="React">
+                            <img src="../images/tech/nodejs.svg" alt="Node.js" title="Node.js">
+                            <img src="../images/tech/supabase.svg" alt="Supabase" title="Supabase">
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-primary view-project-btn" data-project="Resource Allocation and Tracking Engine">View Project</button>
                         </div>
                     </div>
 
@@ -291,7 +331,7 @@
                             <!-- Add icons for Express and Google Maps API if downloaded later -->
                         </div>
                         <div class="project-links">
-                            <a href="https://drive.google.com/drive/folders/11MYi9SI485Xy9bTOFxEdyiaNMY_sGRGa?usp=sharing" class="btn btn-primary" target="_blank">View Project</a>
+                            <button class="btn btn-primary view-project-btn" data-project="E-Bida CamNorte Website">View Project</button>
                         </div>
                     </div>
 
@@ -333,7 +373,61 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://drive.google.com/drive/folders/1reKsowpBeAQkishPe0EGwEnv0GdDj0i1?usp=sharing" class="btn btn-primary" target="_blank">View Project</a>
+                            <button class="btn btn-primary view-project-btn" data-project="Fish Monitoring Website">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2>Client Reviews</h2>
+                <div class="reviews-carousel">
+                    <div class="review-track">
+                        <!-- Review 1 -->
+                        <div class="review-card">
+                            <div class="review-content">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p>"anyway po, update lang hehe. nag labas na po grade namin sa research and i think po pasok na pasok sya sa best in thesis. sabi din po ng adviser namin hehe. thank you po"</p>
+                                <div class="client-info">
+                                    <h4>Thesis Client</h4>
+                                    <span>Student Research</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="review-card">
+                            <div class="review-content">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p>"Hello po, Thesis Defended na po kami and ang gaganda po ng comment ng mga Panelist namin. Maraming Salamat sa inyoooo. May kaunting pinadagdag lang po sa website na information but over all sobrang nagalingan sila 🥳"</p>
+                                <div class="client-info">
+                                    <h4>Capstone Team</h4>
+                                    <span>Thesis Defense</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="review-card">
+                            <div class="review-content">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p>"Good evening po! Approved na po kami sa defense kanina. Tuwang tuwa yung panel sa features ng system, lalo na sa monitoring part. Thank you so much po sa solid na gawa!"</p>
+                                <div class="client-info">
+                                    <h4>System Project</h4>
+                                    <span>Capstone Project</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 4 -->
+                        <div class="review-card">
+                            <div class="review-content">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p>"Sir maraming salamat po talaga! Ang ganda ng feedback samin, pulido daw yung gawa. Worth it po yung pagpapagawa namin sa inyo. Sa uulitin po!"</p>
+                                <div class="client-info">
+                                    <h4>Final Project Group</h4>
+                                    <span>Satisfied Client</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +437,7 @@
         <section id="contact" class="contact-section" aria-labelledby="contact-title">
             <div class="container">
                 <h2 id="contact-title">Contact</h2>
-                <form id="contact-form" action="https://formspree.io/f/mdkzkbqn" method="POST" aria-label="Contact form">
+                <form id="contact-form" aria-label="Contact form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required aria-required="true" />
 
@@ -367,40 +461,6 @@
 
     <!-- Optimized Font Awesome loading -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
-    
-    <!-- Form validation and security -->
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Basic form validation
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            if (!name || !email || !message) {
-                alert('Please fill in all fields');
-                e.preventDefault(); // Prevent actual submission
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
-                e.preventDefault(); // Prevent actual submission
-                return;
-            }
-            
-            // If validation passes, the form will submit normally to Formspree
-            // No need for an explicit success message here, Formspree handles it.
-
-            // You might want to add a loading state to the button here if desired
-
-            // Add CSRF token if you're using a backend (Formspree handles this differently)
-            // const formData = new FormData(this);
-        });
-    </script>
     
     <!-- Main script -->
     <script src="script.js" defer></script>
