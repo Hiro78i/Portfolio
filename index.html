@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lander Villagracia - IT - Web Developer Portfolio</title>
+    <title>Lander Villagracia - Software Programmer | React Developer | AI Enthusiast</title>
     
     <!-- Meta Description -->
-    <meta name="description" content="Lander Villagracia - IT - Web Developer specializing in creating intuitive and visually stunning digital experiences. View my portfolio of web development projects." />
+    <meta name="description" content="Information Technology graduate and Software Engineer/Programmer specializing in React, Laravel, PostgreSQL, UI/UX design, and Generative AI." />
     
     <!-- Keywords -->
-    <meta name="keywords" content="Lander Villagracia, IT - Web Developer, UI/UX Design, Portfolio, Web Development, Philippines" />
+    <meta name="keywords" content="Lander Villagracia, Software Programmer, React Developer, Generative AI, UI/UX Design, Portfolio, Web Development, Philippines" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://your-portfolio-url.com/" />
-    <meta property="og:title" content="Lander Villagracia - IT - Web Developer Portfolio" />
-    <meta property="og:description" content="IT - Web Developer specializing in creating intuitive and visually stunning digital experiences." />
+    <meta property="og:title" content="Lander Villagracia - Software Programmer | React Developer | AI Enthusiast" />
+    <meta property="og:description" content="Software Engineer/Programmer specializing in React, Laravel, PostgreSQL, UI/UX design, and Generative AI." />
     <meta property="og:image" content="https://your-portfolio-url.com/images/pfp.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://your-portfolio-url.com/" />
-    <meta property="twitter:title" content="Lander Villagracia - IT - Web Developer Portfolio" />
-    <meta property="twitter:description" content="IT - Web Developer specializing in creating intuitive and visually stunning digital experiences." />
+    <meta property="twitter:title" content="Lander Villagracia - Software Programmer | React Developer | AI Enthusiast" />
+    <meta property="twitter:description" content="Software Engineer/Programmer specializing in React, Laravel, PostgreSQL, UI/UX design, and Generative AI." />
     <meta property="twitter:image" content="https://your-portfolio-url.com/images/pfp.jpg" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     
     <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     
     <!-- SweetAlert2 for nice alerts -->
@@ -58,7 +60,7 @@
             "https://www.linkedin.com/in/yourprofile",
             "https://github.com/yourprofile"
         ],
-        "jobTitle": "IT - Web Developer",
+        "jobTitle": "Software Programmer | React Developer | AI Enthusiast",
         "worksFor": {
             "@type": "Organization",
             "name": "Freelance"
@@ -73,14 +75,17 @@
 <body>
     <header role="banner">
         <div class="container header-container">
-            <div class="logo" role="text">Lander Villagracia</div>
+            <a class="logo" href="#home" aria-label="Lander Villagracia home">
+                <span class="logo-mark">LV</span>
+                <span class="logo-name">Lander Villagracia</span>
+            </a>
             <nav role="navigation" aria-label="Main navigation">
                 <ul class="nav-links">
                     <li><a href="#home" class="active" aria-current="page">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#blog">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Expertise</a></li>
+                    <li><a href="#contact" class="nav-cta">Let's talk <span aria-hidden="true">↗</span></a></li>
                 </ul>
             </nav>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
@@ -95,19 +100,19 @@
         <section id="home" class="home-section" aria-label="Introduction">
             <div class="container home-container">
                 <div class="profile-pic">
-                    <img src="images/pfp.jpg" alt="Lander Villagracia - IT - Web Developer" width="180" height="180" />
+                    <img src="images/pfp.jpg" alt="Lander Villagracia - Software Programmer and React Developer" width="180" height="180" />
+                    <div class="profile-caption"><span>Based in</span><strong>Camarines Norte, PH</strong></div>
                 </div>
                 <div class="intro-text">
-                    <h1>Hi, I'm <span class="highlight">Lander Villagracia</span></h1>
-                    <h2>IT - Web Developer</h2>
+                    <h1>Lander <span class="highlight">Villagracia.</span></h1>
+                    <h2>Software Programmer | React Developer | AI Enthusiast</h2>
                     <p>
-                        I am an Information Technology graduate and IT professional currently working at the School Division Office of Camarines Norte (SDO) . 
-                        I specialize in web development, frontend engineering, and UI/UX design , creating modern, intuitive, and reliable digital solutions 
-                        for both government and private sector needs.
+                        I am an Information Technology graduate and Software Engineer/Programmer currently working at the Schools Division Office of Camarines Norte (SDO Camarines Norte). I specialize in web development, frontend engineering, UI/UX design, and building modern web applications using React, Laravel, and PostgreSQL. I build modern web and mobile applications that prioritize performance, scalability, and exceptional user experiences. These days, I'm also focused on Generative AI, exploring how AI can be integrated into real-world applications to improve productivity, automate workflows, and create smarter digital solutions.
                     </p>
                     <div class="buttons">
-                        <a href="images/Resume.pdf" class="btn btn-primary" download aria-label="Download my resume">Download CV</a>
-                        <a href="#contact" class="btn btn-secondary" aria-label="Go to contact section">Contact</a>
+                        <a href="#blog" class="btn btn-primary">Explore selected work <span aria-hidden="true">↘</span></a>
+                        <a href="#contact" class="btn btn-secondary">Start a conversation <span aria-hidden="true">↗</span></a>
+                        <a href="images/Resume.pdf" class="text-link" download>Download résumé</a>
                     </div>
                     <div class="social-icons" role="navigation" aria-label="Social media links">
                         <a href="https://www.facebook.com/lander.villagracia.19/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Facebook profile">
@@ -129,21 +134,29 @@
                             <img src="images/social/gmail.svg" alt="Gmail" width="24" height="24">
                         </a>
                     </div>
+                    <div class="hero-proof" aria-label="Professional highlights">
+                        <div><strong>04</strong><span>Featured systems</span></div>
+                        <div><strong>PERN</strong><span>Full-stack focus</span></div>
+                        <div><strong>AI</strong><span>Applied innovation</span></div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about-section" aria-labelledby="about-title">
             <div class="container">
+                <p class="section-kicker">01 / Profile</p>
                 <h2 id="about-title">About Me</h2>
-            <p>Web Developer and IT Professional at the School Division Office of Camarines Norte (SDO) with experience building and maintaining web-based systems for organizational use.</p>
-            <p>I specialize in full-stack web development using the PERN stack (PostgreSQL, Express.js, React, Node.js) and Supabase for database management, authentication, and backend services. My work includes API integration, CRUD systems, role-based access control, and performance optimization.</p>
-            <p>Certified CSS NC II passer and Google AI Certifications holder, committed to continuous learning and delivering efficient, scalable digital solutions.</p>
+                <p>Web Developer and IT Professional at the Schools Division Office of Camarines Norte (SDO Camarines Norte), with experience designing, developing, and maintaining web-based systems that improve organizational efficiency and digital transformation.</p>
+                <p>I specialize in full-stack web development using PostgreSQL, Express.js, React, Node.js (PERN Stack), Laravel, and Supabase for database management, authentication, backend services, and API development. My expertise includes RESTful API integration, CRUD applications, role-based access control (RBAC), UI/UX design, responsive web development, and performance optimization.</p>
+                <p>I build modern web and mobile applications that are scalable, secure, and user-centered. Recently, I have been expanding my expertise in Generative AI, integrating AI-powered technologies into applications to automate workflows, enhance productivity, and deliver smarter digital experiences.</p>
+                <p>I am a CSS NC II Certified professional and hold Google AI Certifications, reflecting my commitment to continuous learning, innovation, and developing high-quality software solutions for both government and private sector organizations.</p>
             </div>
         </section>
 
         <section id="tools" class="tools-section">
             <div class="container">
+                <p class="section-kicker">02 / Toolkit</p>
                 <h2>Tools and Skills</h2>
                 <div class="tools-icons">
                     <a href="https://code.visualstudio.com" target="_blank" aria-label="VSCode">
@@ -177,9 +190,6 @@
                      <a href="https://www.mongodb.com/" target="_blank" aria-label="MongoDB">
                         <img src="images/tech/mongodb.svg" alt="MongoDB" />
                     </a>
-                     <a href="https://firebase.google.com/" target="_blank" aria-label="Firebase">
-                        <img src="images/tech/firebase.svg" alt="Firebase" />
-                    </a>
                      <a href="https://nodejs.org/" target="_blank" aria-label="Node.js">
                         <img src="images/tech/nodejs.svg" alt="Node.js" />
                     </a>
@@ -192,6 +202,7 @@
 
         <section id="resume" class="resume-section">
             <div class="container">
+                <p class="section-kicker">03 / Capabilities</p>
                 <h2 class="fade-in">Resume</h2>
                 <div class="resume-grid">
                     <div class="resume-left">
@@ -258,10 +269,16 @@
 
         <section id="blog" class="blog-section">
             <div class="container">
-                <h2>Projects</h2>
+                <p class="section-kicker">04 / Selected work</p>
+                <div class="section-heading">
+                    <h2>Projects</h2>
+                    <p>Purpose-built digital systems where product thinking, engineering, and clear interface design meet.</p>
+                </div>
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project1/1-B.jpg" alt="Smart Ticketing Website interface preview" loading="lazy" /></div>
+                        <span class="project-index">01 / Web platform</span>
                         <h3><i class="fas fa-ticket-alt"></i> Smart Ticketing Website</h3>
                         <div class="project-description">
                             <p>A comprehensive ticketing system that streamlines event management and ticket sales. Features include real-time seat selection, secure payment processing, and automated email confirmations.</p>
@@ -287,6 +304,8 @@
 
                     <!-- Project: Resource Allocation and Tracking Engine -->
                     <div class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project2/Screenshot (179).png" alt="Resource Allocation and Tracking Engine interface preview" loading="lazy" /></div>
+                        <span class="project-index">02 / Operations system</span>
                         <h3><i class="fas fa-tasks"></i> Resource Allocation and Tracking Engine</h3>
                         <div class="project-description">
                             <p>A web-based application designed to efficiently manage, allocate, and monitor organizational resources in real time. It streamlines resource assignment, tracks usage and availability, and provides centralized data for better planning, accountability, and decision making.</p>
@@ -312,6 +331,8 @@
 
                     <!-- Project 2 -->
                     <div class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project4/Screenshot (147).png" alt="E-Bida CamNorte interface preview" loading="lazy" /></div>
+                        <span class="project-index">03 / Tourism platform</span>
                         <h3><i class="fas fa-masks-theater"></i> E-Bida CamNorte Website</h3>
                         <div class="project-description">
                             <p>A vibrant platform showcasing local festivals and events in Camarines Norte. Features include event calendars, photo galleries, and interactive maps for tourist attractions.</p>
@@ -337,6 +358,8 @@
 
                     <!-- Project 3 -->
                     <div class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project3/Screenshot (143).png" alt="Fish Monitoring Website interface preview" loading="lazy" /></div>
+                        <span class="project-index">04 / Monitoring system</span>
                         <h3><i class="fas fa-fish"></i> Fish Monitoring Website</h3>
                         <div class="project-description">
                             <p>An innovative system for monitoring fish farm conditions and health metrics. Features real-time data visualization, automated alerts, and comprehensive reporting tools.</p>
@@ -382,7 +405,11 @@
 
         <section id="reviews" class="reviews-section">
             <div class="container">
-                <h2>Client Reviews</h2>
+                <p class="section-kicker">05 / Client signal</p>
+                <div class="section-heading">
+                    <h2>Client Reviews</h2>
+                    <p>Real feedback from teams whose systems made it through review, defense, and delivery.</p>
+                </div>
                 <div class="reviews-carousel">
                     <div class="review-track">
                         <!-- Review 1 -->
@@ -436,7 +463,12 @@
 
         <section id="contact" class="contact-section" aria-labelledby="contact-title">
             <div class="container">
-                <h2 id="contact-title">Contact</h2>
+                <div class="contact-intro">
+                    <p class="section-kicker">06 / Start a project</p>
+                    <h2 id="contact-title">Have a useful idea?<br />Let's make it real.</h2>
+                    <p>Tell me what you are building, what is getting in the way, and what success should look like.</p>
+                    <a href="mailto:villagracialander@gmail.com" class="contact-email">villagracialander@gmail.com <span aria-hidden="true">↗</span></a>
+                </div>
                 <form id="contact-form" aria-label="Contact form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required aria-required="true" />
@@ -447,7 +479,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
 
-                    <button type="submit" class="btn btn-primary" aria-label="Send message">Send</button>
+                    <button type="submit" class="btn btn-primary" aria-label="Send message">Send project brief <span aria-hidden="true">↗</span></button>
                 </form>
             </div>
         </section>
@@ -455,9 +487,25 @@
 
     <footer role="contentinfo">
         <div class="container footer-container">
-            <p>&copy; 2024 Lander Villagracia. All rights reserved.</p>
+            <a class="footer-brand" href="#home">LV.</a>
+            <p>&copy; 2026 Lander Villagracia. Designed and engineered with intent.</p>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
         </div>
     </footer>
+
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project gallery">
+        <div class="modal-content">
+            <button class="close-button" type="button" aria-label="Close project gallery">&times;</button>
+            <div id="projectImageGallery" class="project-image-gallery"></div>
+        </div>
+    </div>
+
+    <div id="fullImageModal" class="modal" role="dialog" aria-modal="true" aria-label="Full-size project image">
+        <div class="modal-content full-image-content">
+            <button class="close-button full-image-close" type="button" aria-label="Close full-size image">&times;</button>
+            <img id="fullImage" src="" alt="Full-size project preview" />
+        </div>
+    </div>
 
     <!-- Optimized Font Awesome loading -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
@@ -466,21 +514,3 @@
     <script src="script.js" defer></script>
 </body>
 </html>
-
-<!-- Project Details Modal -->
-<div id="projectModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <div id="projectImageGallery" class="project-image-gallery">
-            <!-- Project images will be loaded here by JavaScript -->
-        </div>
-    </div>
-</div>
-
-<!-- Full Image Modal -->
-<div id="fullImageModal" class="modal">
-    <div class="modal-content full-image-content">
-        <span class="close-button full-image-close">&times;</span>
-        <img id="fullImage" src="" alt="Full size project image">
-    </div>
-</div>
