@@ -1,0 +1,18 @@
+{
+  "name": "Lander Villagracia Portfolio",
+  "short_name": "Lander Villagracia",
+  "description": "Portfolio of Lander Villagracia, a Filipino software programmer and React developer.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#06111f",
+  "theme_color": "#06111f",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
