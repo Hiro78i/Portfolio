@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects & Timeline | Lander Villagracia</title>
+    <meta name="description" content="Explore the complete project portfolio and development timeline of Software Programmer Lander Villagracia." />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header role="banner">
+        <div class="container header-container">
+            <a class="logo" href="index.html#home" aria-label="Lander Villagracia home">
+                <span class="logo-mark">LV</span>
+                <span class="logo-name">Lander Villagracia</span>
+            </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#resume">Expertise</a></li>
+                    <li><a href="index.html#contact" class="nav-cta">Let's talk <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="projects-page-main">
+        <section class="projects-hero" aria-labelledby="projects-title">
+            <div class="container">
+                <p class="section-kicker">Complete portfolio</p>
+                <h1 id="projects-title">Projects built across<br />learning, public service, and operations.</h1>
+                <p class="projects-lead">A timeline of the systems I designed and developed—from early academic platforms to current digital services for the Schools Division Office of Camarines Norte.</p>
+                <a class="text-link" href="#all-projects">Explore all projects ↓</a>
+            </div>
+        </section>
+
+        <section class="timeline-section" aria-labelledby="timeline-title">
+            <div class="container">
+                <p class="section-kicker">Development journey</p>
+                <h2 id="timeline-title">Project Timeline</h2>
+                <div class="project-timeline">
+                    <article class="timeline-item animate-card">
+                        <time datetime="2023">2023</time>
+                        <div><h3>Smart Ticketing Website</h3><p>Built an early end-to-end ticketing platform focused on event workflows, seat selection, and digital confirmations.</p></div>
+                    </article>
+                    <article class="timeline-item animate-card">
+                        <time datetime="2024">2024</time>
+                        <div><h3>Fish Monitoring & E-Bida CamNorte</h3><p>Expanded into real-time monitoring and tourism-focused experiences, strengthening dashboard, mapping, and multimedia skills.</p></div>
+                    </article>
+                    <article class="timeline-item animate-card">
+                        <time datetime="2025">2025</time>
+                        <div><h3>Resource Allocation and Tracking Engine</h3><p>Developed a full-stack operations system for centralized resource assignment, availability tracking, and reporting.</p></div>
+                    </article>
+                    <article class="timeline-item timeline-current animate-card">
+                        <time datetime="2026">2026</time>
+                        <div><h3>Helpdesk Portal & RQA Appointing System</h3><p>Delivered two current-year SDO platforms for technical assistance management and data-driven teacher applicant appointment.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="all-projects" class="blog-section all-projects-section" aria-labelledby="all-projects-title">
+            <div class="container">
+                <p class="section-kicker">Selected systems</p>
+                <div class="section-heading">
+                    <h2 id="all-projects-title">All Projects</h2>
+                    <p>Six digital products shaped by practical workflows, thoughtful interfaces, and dependable implementation.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card animate-card">
+                        <div class="project-media"><img src="images/helpdesk-portal.png" alt="Helpdesk Portal sign-in page" loading="eager" /></div>
+                        <span class="project-index">2026 / Online Support</span>
+                        <h3>Helpdesk Portal</h3>
+                        <div class="project-description">
+                            <p>A web-based technical assistance tracking and feedback mechanism for SDO personnel and schools, learning centers, and offices. It automatically generates validated Digital Technical Assistance Tickets, emails them to TA providers, and centralizes Division-wide analytics.</p>
+                            <div class="tech-stack"><span class="tech-tag">Technical Assistance</span><span class="tech-tag">Ticketing</span><span class="tech-tag">Analytics</span></div>
+                        </div>
+                        <div class="project-links"><a class="btn btn-primary" href="https://helpdesk.depedcamnorte.ph/login" target="_blank" rel="noopener noreferrer">Visit Website</a></div>
+                    </article>
+
+                    <article class="project-card animate-card">
+                        <div class="project-media"><img src="images/rqa-appointing-system.png" alt="Registry of Qualified Applicants system sign-in page" loading="lazy" /></div>
+                        <span class="project-index">2026 / Appointment System</span>
+                        <h3>Registry of Qualified Applicants and Appointing System</h3>
+                        <div class="project-description">
+                            <p>A web-based system for the Schools Division Superintendent to view, filter, and appoint qualified teacher applicants. It automates filtering and report generation while presenting narrative data through a focused dashboard.</p>
+                            <div class="tech-stack"><span class="tech-tag">Applicant Registry</span><span class="tech-tag">Reporting</span><span class="tech-tag">Dashboard</span></div>
+                        </div>
+                        <div class="project-links"><a class="btn btn-primary" href="https://rqa-ecru.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Website</a></div>
+                    </article>
+
+                    <article class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project2/Screenshot (179).png" alt="Resource Allocation and Tracking Engine interface" loading="lazy" /></div>
+                        <span class="project-index">2025 / Operations System</span>
+                        <h3>Resource Allocation and Tracking Engine</h3>
+                        <div class="project-description">
+                            <p>A centralized application for assigning, monitoring, and reporting organizational resources in real time, supporting better planning, availability tracking, and accountability.</p>
+                            <div class="tech-stack"><span class="tech-tag">PostgreSQL</span><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">Supabase</span></div>
+                        </div>
+                        <div class="project-links"><button class="btn btn-primary view-project-btn" data-project="Resource Allocation and Tracking Engine">View Project</button></div>
+                    </article>
+
+                    <article class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project4/Screenshot (147).png" alt="E-Bida CamNorte interface" loading="lazy" /></div>
+                        <span class="project-index">2024 / Tourism Platform</span>
+                        <h3>E-Bida CamNorte Website</h3>
+                        <div class="project-description">
+                            <p>A vibrant platform showcasing Camarines Norte festivals, events, galleries, and tourist destinations through a responsive and interactive visitor experience.</p>
+                            <div class="tech-stack"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Maps API</span></div>
+                        </div>
+                        <div class="project-links"><button class="btn btn-primary view-project-btn" data-project="E-Bida CamNorte Website">View Project</button></div>
+                    </article>
+
+                    <article class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project3/Screenshot (143).png" alt="Fish Monitoring Website interface" loading="lazy" /></div>
+                        <span class="project-index">2024 / Monitoring System</span>
+                        <h3>Fish Monitoring Website</h3>
+                        <div class="project-description">
+                            <p>A monitoring system for fish-farm conditions and health metrics, combining data visualization, automated alerts, and operational reporting tools.</p>
+                            <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Firebase</span><span class="tech-tag">Tailwind</span></div>
+                        </div>
+                        <div class="project-links"><button class="btn btn-primary view-project-btn" data-project="Fish Monitoring Website">View Project</button></div>
+                    </article>
+
+                    <article class="project-card animate-card">
+                        <div class="project-media"><img src="images/Project1/1-B.jpg" alt="Smart Ticketing Website interface" loading="lazy" /></div>
+                        <span class="project-index">2023 / Web Platform</span>
+                        <h3>Smart Ticketing Website</h3>
+                        <div class="project-description">
+                            <p>A ticketing platform that streamlines event management and sales through seat selection, secure transaction workflows, and automated email confirmations.</p>
+                            <div class="tech-stack"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+                        </div>
+                        <div class="project-links"><button class="btn btn-primary view-project-btn" data-project="Smart Ticketing Website">View Project</button></div>
+                    </article>
+                </div>
+                <div class="projects-more"><a class="btn btn-secondary" href="index.html#blog">← Back to Portfolio</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container footer-container">
+            <a class="footer-brand" href="index.html#home">LV.</a>
+            <p>&copy; 2026 Lander Villagracia. Designed and programmed with intent.</p>
+            <a href="#all-projects" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project gallery">
+        <div class="modal-content"><button class="close-button" type="button" aria-label="Close project gallery">&times;</button><div id="projectImageGallery" class="project-image-gallery"></div></div>
+    </div>
+    <div id="fullImageModal" class="modal" role="dialog" aria-modal="true" aria-label="Full-size project image">
+        <div class="modal-content full-image-content"><button class="close-button full-image-close" type="button" aria-label="Close full-size image">&times;</button><img id="fullImage" src="" alt="Full-size project preview" /></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
