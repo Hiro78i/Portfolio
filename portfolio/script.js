@@ -280,9 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         title: 'Message sent',
                         text: 'Thank you for reaching out. I will get back to you soon.',
                         icon: 'success',
-                        confirmButtonColor: '#b69a60',
-                        background: '#06111f',
-                        color: '#ffffff'
+                        confirmButtonColor: '#202020',
+                        background: '#ffffff',
+                        color: '#202020'
                     });
                 }
                 contactForm.reset();
@@ -293,9 +293,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         title: 'Message not sent',
                         text: 'Please email me directly at villagracialander@gmail.com.',
                         icon: 'error',
-                        confirmButtonColor: '#b69a60',
-                        background: '#06111f',
-                        color: '#ffffff'
+                        confirmButtonColor: '#202020',
+                        background: '#ffffff',
+                        color: '#202020'
                     });
                 }
             } finally {

@@ -83,12 +83,12 @@
                 <span class="logo-name">Lander Villagracia</span>
             </a>
             <nav role="navigation" aria-label="Main navigation">
-                <ul class="nav-links">
-                    <li><a href="#home" class="active" aria-current="page">Home</a></li>
-                    <li><a href="#blog">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Expertise</a></li>
-                    <li><a href="#contact" class="nav-cta">Let's talk <span aria-hidden="true">↗</span></a></li>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="active" aria-current="page"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>Home</a></li>
+                    <li><a href="#blog"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V4h8v3M3 12a24 24 0 0 0 18 0M12 11v4"/></svg>Work</a></li>
+                    <li><a href="#about"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg>About</a></li>
+                    <li><a href="#resume"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg>Expertise</a></li>
+                    <li><a href="#contact" class="nav-cta"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Let's talk <span aria-hidden="true">↗</span></a></li>
                 </ul>
             </nav>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
@@ -152,7 +152,6 @@
                 <h2 id="about-title">About Me</h2>
                 <p>Software Programmer | Full-Stack Developer (React, Laravel, PostgreSQL) | AI Integration Specialist</p>
                 <p>I specialize in full-stack web development using PostgreSQL, Express.js, React, Node.js (PERN Stack), Laravel, and Supabase for database management, authentication, backend services, and API development. My expertise includes RESTful API integration, CRUD applications, role-based access control (RBAC), UI/UX design, responsive web development, and performance optimization.</p>
-                <p>I build modern web and mobile applications that are scalable, secure, and user-centered. Recently, I have been expanding my expertise in Generative AI, integrating AI-powered technologies into applications to automate workflows, enhance productivity, and deliver smarter digital experiences.</p>
                 <p>I am a CSS NC II Certified professional and hold Google AI Certifications, reflecting my commitment to continuous learning, innovation, and developing high-quality software solutions for both government and private sector organizations.</p>
             </div>
         </section>
@@ -164,40 +163,52 @@
                 <div class="tools-icons">
                     <a href="https://code.visualstudio.com" target="_blank" aria-label="VSCode">
                         <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" alt="VSCode" />
+                        <span>VS Code</span>
                     </a>
                     <a href="https://supabase.com/" target="_blank" aria-label="Supabase">
                         <img src="../images/tech/supabase.svg" alt="Supabase" />
+                        <span>Supabase</span>
                     </a>
                     <a href="https://www.postgresql.org/" target="_blank" aria-label="PostgreSQL">
                         <img src="../images/tech/postgresql.svg" alt="PostgreSQL" />
+                        <span>PostgreSQL</span>
                     </a>
                     <a href="https://www.apachefriends.org/" target="_blank" aria-label="XAMPP">
                         <img src="../images/tech/xampp.svg" alt="XAMPP" />
+                        <span>XAMPP</span>
                     </a>
                     <a href="https://www.figma.com" target="_blank" aria-label="Figma">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
+                        <span>Figma</span>
                     </a>
                     <!-- New Technology Logos -->
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" aria-label="JavaScript">
                         <img src="../images/tech/javascript.svg" alt="JavaScript" />
+                        <span>JavaScript</span>
                     </a>
                     <a href="https://reactjs.org/" target="_blank" aria-label="React.js">
                         <img src="../images/tech/react.svg" alt="React.js" />
+                        <span>React</span>
                     </a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" aria-label="HTML5">
                         <img src="../images/tech/html5.svg" alt="HTML5" />
+                        <span>HTML5</span>
                     </a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" aria-label="CSS3">
                         <img src="../images/tech/css3.svg" alt="CSS3" />
+                        <span>CSS3</span>
                     </a>
-                     <a href="https://www.mongodb.com/" target="_blank" aria-label="MongoDB">
-                        <img src="../images/tech/mongodb.svg" alt="MongoDB" />
+                     <a href="https://www.cloudflare.com/" target="_blank" aria-label="Cloudflare">
+                        <img src="../images/tech/cloudflare.svg" alt="Cloudflare" />
+                        <span>Cloudflare</span>
                     </a>
                      <a href="https://nodejs.org/" target="_blank" aria-label="Node.js">
                         <img src="../images/tech/nodejs.svg" alt="Node.js" />
+                        <span>Node.js</span>
                     </a>
                     <a href="https://wordpress.org/" target="_blank" aria-label="WordPress">
                         <img src="../images/tech/wordpress.svg" alt="WordPress" />
+                        <span>WordPress</span>
                     </a>
                 </div>
             </div>
@@ -214,25 +225,25 @@
                             <div class="skills-section">
                                 <h4>Hard Skills</h4>
                                 <div class="skills-grid">
-                                    <div class="skill-item"><span class="star">★</span> Programming</div>
-                                    <div class="skill-item"><span class="star">★</span> UI/UX–Driven Web Development</div>
-                                    <div class="skill-item"><span class="star">★</span> Full-Stack Development (PostgreSQL · Express · React · Node.js)</div>
-                                    <div class="skill-item"><span class="star">★</span> REST API & Supabase Integration</div>
-                                    <div class="skill-item"><span class="star">★</span> Responsive & Scalable Web Applications</div>
-                                    <div class="skill-item"><span class="star">★</span> Advertising & Marketing Design</div>
-                                    <div class="skill-item"><span class="star">★</span> Multimedia Production</div>
-                                    <div class="skill-item"><span class="star">★</span> Microsoft Suite</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Programming</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> UI/UX–Driven Web Development</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Full-Stack Development (PostgreSQL · Express · React · Node.js)</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> REST API & Supabase Integration</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Responsive & Scalable Web Applications</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Advertising & Marketing Design</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Multimedia Production</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Microsoft Suite</div>
                                 </div>
                             </div>
                             <div class="skills-section">
                                 <h4>Soft Skills</h4>
                                 <div class="skills-grid">
-                                    <div class="skill-item"><span class="star">★</span> Problem Solving</div>
-                                    <div class="skill-item"><span class="star">★</span> Creativity</div>
-                                    <div class="skill-item"><span class="star">★</span> Communication</div>
-                                    <div class="skill-item"><span class="star">★</span> Teamwork</div>
-                                    <div class="skill-item"><span class="star">★</span> Adaptability</div>
-                                    <div class="skill-item"><span class="star">★</span> Time Management</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Problem Solving</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Creativity</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Communication</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Teamwork</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Adaptability</div>
+                                    <div class="skill-item"><span class="star" aria-hidden="true"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 13 3 3 5-6"/></svg></span> Time Management</div>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +305,7 @@
                     <div class="project-card animate-card">
                         <div class="project-media"><img src="../images/helpdesk-portal.png" alt="Helpdesk Portal sign-in page" loading="lazy" /></div>
                         <span class="project-index">01 / Online Support</span>
-                        <h3><i class="fas fa-headset"></i> Helpdesk Portal</h3>
+                        <h3>Helpdesk Portal</h3>
                         <div class="project-description">
                             <p>A web-based technical assistance tracking and feedback mechanism for SDO personnel and schools, learning centers, and offices. It automatically generates a validated Digital Technical Assistance Ticket (TAT), emails it to the TA provider, and centralizes Division-wide TA analytics.</p>
                             <div class="tech-stack">
@@ -312,7 +323,7 @@
                     <div class="project-card animate-card">
                         <div class="project-media"><img src="../images/rqa-appointing-system.png" alt="Registry of Qualified Applicants system sign-in page" loading="lazy" /></div>
                         <span class="project-index">02 / Appointment system</span>
-                        <h3><i class="fas fa-user-check"></i> Registry of Qualified Applicants and Appointing System</h3>
+                        <h3>Registry of Qualified Applicants and Appointing System</h3>
                         <div class="project-description">
                             <p>A web-based system built for the Schools Division Superintendent to easily view, filter, and appoint qualified teacher applicants. It automates applicant filtering and report generation, with dashboard visualizations that turn narrative data into clear insights.</p>
                             <div class="tech-stack">
@@ -326,63 +337,30 @@
                         </div>
                     </div>
 
-                    <!-- Project 1 -->
                     <div class="project-card animate-card">
-                        <div class="project-media"><img src="../images/Project1/1-B.jpg" alt="Smart Ticketing Website interface preview" loading="lazy" /></div>
-                        <span class="project-index">03 / Web platform</span>
-                        <h3><i class="fas fa-ticket-alt"></i> Smart Ticketing Website</h3>
+                        <div class="project-media"><img src="../images/kamitollohia.jpg" alt="KA-MITOLLOHIA homepage featuring Camarines Norte folklore" loading="lazy" width="1440" height="810" /></div>
+                        <span class="project-index">03 / Cultural storytelling</span>
+                        <h3>KA-MITOLLOHIA</h3>
                         <div class="project-description">
-                            <p>A comprehensive ticketing system that streamlines event management and ticket sales. Features include real-time seat selection, secure payment processing, and automated email confirmations.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">MySQL</span>
-                            </div>
+                            <p>An interactive storytelling website bringing Camarines Norte folklore to life. Explore local myths, discover regional stories, and meet the researchers preserving CamNorteño culture through a digital experience.</p>
+                            <div class="tech-stack"><span class="tech-tag">Folklore</span><span class="tech-tag">Storytelling</span><span class="tech-tag">Camarines Norte</span></div>
                         </div>
-                        <!-- Tech Icons for Smart Ticketing -->
-                        <div class="project-tech-icons">
-                            <img src="../images/tech/html5.svg" alt="HTML5" title="HTML5">
-                            <img src="../images/tech/css3.svg" alt="CSS3" title="CSS3">
-                            <img src="../images/tech/javascript.svg" alt="JavaScript" title="JavaScript">
-                            <!-- Add icons for PHP and MySQL if downloaded later -->
-                        </div>
-                        <div class="project-links">
-                            <button class="btn btn-primary view-project-btn" data-project="Smart Ticketing Website">View Project</button>
-                        </div>
+                        <div class="project-links"><a class="btn btn-primary" href="https://kamitollohia.vercel.app/#home" target="_blank" rel="noopener noreferrer">Visit Website</a></div>
                     </div>
 
-                    <!-- Project: Resource Allocation and Tracking Engine -->
                     <div class="project-card animate-card">
-                        <div class="project-media"><img src="../images/Project2/Screenshot (179).png" alt="Resource Allocation and Tracking Engine interface preview" loading="lazy" /></div>
-                        <span class="project-index">04 / Operations system</span>
-                        <h3><i class="fas fa-tasks"></i> Resource Allocation and Tracking Engine</h3>
+                        <div class="project-media"><img src="../images/mabini-clearance.jpg" alt="Mabini Colleges Student Clearance System login page" loading="lazy" width="1440" height="810" /></div>
+                        <span class="project-index">04 / Student services</span>
+                        <h3>Mabini Student Clearance System</h3>
                         <div class="project-description">
-                            <p>A web-based application designed to efficiently manage, allocate, and monitor organizational resources in real time. It streamlines resource assignment, tracks usage and availability, and provides centralized data for better planning, accountability, and decision making.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Express.js</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Supabase</span>
-                            </div>
+                            <p>A student clearance platform for Mabini Colleges that brings requests and office reviews into one place. Students can submit clearance applications and follow their status, while authorized personnel review requests and manage approvals.</p>
+                            <div class="tech-stack"><span class="tech-tag">Student Clearance</span><span class="tech-tag">Office Reviews</span><span class="tech-tag">Status Tracking</span></div>
                         </div>
-                        <div class="project-tech-icons">
-                            <img src="../images/tech/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
-                            <!-- Express.js icon often not standard, skipping or using nodejs -->
-                            <img src="../images/tech/react.svg" alt="React" title="React">
-                            <img src="../images/tech/nodejs.svg" alt="Node.js" title="Node.js">
-                            <img src="../images/tech/supabase.svg" alt="Supabase" title="Supabase">
-                        </div>
-                        <div class="project-links">
-                            <button class="btn btn-primary view-project-btn" data-project="Resource Allocation and Tracking Engine">View Project</button>
-                        </div>
+                        <div class="project-links"><a class="btn btn-primary" href="https://student-clearance-system-mabini.vercel.app/login" target="_blank" rel="noopener noreferrer">Visit Website</a></div>
                     </div>
-
                 </div>
                 <div class="projects-more">
-                    <a class="btn btn-secondary" href="../projects.html">See More Projects <span aria-hidden="true">→</span></a>
+                    <a class="btn btn-secondary" href="../projects.html">All Projects <span aria-hidden="true">→</span></a>
                 </div>
             </div>
         </section>
@@ -399,7 +377,7 @@
                         <!-- Review 1 -->
                         <div class="review-card">
                             <div class="review-content">
-                                <i class="fas fa-quote-left quote-icon"></i>
+                                <svg class="icon quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H4v7h5c0 4-2 6-5 7m16-14h-6v7h5c0 4-2 6-5 7"/></svg>
                                 <p>"anyway po, update lang hehe. nag labas na po grade namin sa research and i think po pasok na pasok sya sa best in thesis. sabi din po ng adviser namin hehe. thank you po"</p>
                                 <div class="client-info">
                                     <h4>Thesis Client</h4>
@@ -410,7 +388,7 @@
                         <!-- Review 2 -->
                         <div class="review-card">
                             <div class="review-content">
-                                <i class="fas fa-quote-left quote-icon"></i>
+                                <svg class="icon quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H4v7h5c0 4-2 6-5 7m16-14h-6v7h5c0 4-2 6-5 7"/></svg>
                                 <p>"Hello po, Thesis Defended na po kami and ang gaganda po ng comment ng mga Panelist namin. Maraming Salamat sa inyoooo. May kaunting pinadagdag lang po sa website na information but over all sobrang nagalingan sila 🥳"</p>
                                 <div class="client-info">
                                     <h4>Capstone Team</h4>
@@ -421,7 +399,7 @@
                         <!-- Review 3 -->
                         <div class="review-card">
                             <div class="review-content">
-                                <i class="fas fa-quote-left quote-icon"></i>
+                                <svg class="icon quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H4v7h5c0 4-2 6-5 7m16-14h-6v7h5c0 4-2 6-5 7"/></svg>
                                 <p>"Good evening po! Approved na po kami sa defense kanina. Tuwang tuwa yung panel sa features ng system, lalo na sa monitoring part. Thank you so much po sa solid na gawa!"</p>
                                 <div class="client-info">
                                     <h4>System Project</h4>
@@ -432,7 +410,7 @@
                         <!-- Review 4 -->
                         <div class="review-card">
                             <div class="review-content">
-                                <i class="fas fa-quote-left quote-icon"></i>
+                                <svg class="icon quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H4v7h5c0 4-2 6-5 7m16-14h-6v7h5c0 4-2 6-5 7"/></svg>
                                 <p>"Sir maraming salamat po talaga! Ang ganda ng feedback samin, pulido daw yung gawa. Worth it po yung pagpapagawa namin sa inyo. Sa uulitin po!"</p>
                                 <div class="client-info">
                                     <h4>Final Project Group</h4>
@@ -492,7 +470,6 @@
     </div>
 
     <!-- Optimized Font Awesome loading -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
     
     <!-- Main script -->
     <script src="script.js" defer></script>
